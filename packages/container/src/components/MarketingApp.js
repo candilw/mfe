@@ -1,6 +1,6 @@
 import { mount } from 'marketing/MarketingApp';
 import React, { useRef, useEffect } from 'react';
-//comment
+//comments
 export default () => {
     const ref = useRef(null);
 
