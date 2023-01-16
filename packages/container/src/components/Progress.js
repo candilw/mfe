@@ -7,10 +7,10 @@ const useStyles = makeStyles((theme) => {
         bar: {
             width: '100%',
             '& > * + *': {
-                marginTop: theme.spacing(2)
-            }
-        }
-    })
+                marginTop: theme.spacing(2),
+            },
+        },
+    });
 });
 
 export default () => {
@@ -19,5 +19,5 @@ export default () => {
         <div className={classes.bar}>
         <LinearProgress />
         </div>
-    )
-}
+    );
+};
