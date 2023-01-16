@@ -23,10 +23,11 @@ export default ({ onSignIn }) => {
                     // console.log(nextPathname)
                 }
             },
+            onSignIn,
             //Could also just call onSignIn without the function since its the same name
-            onSignIn: () => {
-                onSignIn();
-            }
+            //onSignIn: () => {
+            //    onSignIn();
+            //}
         });
 
         history.listen(onParentNavigate);

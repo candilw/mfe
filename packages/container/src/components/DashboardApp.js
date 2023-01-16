@@ -12,5 +12,5 @@ export default () => {
         mount(ref.current);
     }, []);
 
-return <div ref={ref}/>
+return <div ref={ref} />;
 };

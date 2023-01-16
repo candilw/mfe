@@ -11,9 +11,9 @@ import Header from './components/Header';
 
 //This will only load the component when we show it on the screen
 
-const DashboardLazy = lazy(() => import('./components/DashboardApp'));
 const MarketingLazy = lazy(() => import('./components/MarketingApp'));
 const AuthLazy = lazy(() => import('./components/AuthApp'));
+const DashboardLazy = lazy(() => import('./components/DashboardApp'));
 
 const generateClassName = createGenerateClassName({
     productionPrefix: 'co',
@@ -28,7 +28,7 @@ export default () => {
      if (isSignedIn) {
         history.push('/dashboard');
      }
-   }, [isSignedIn])
+   }, [isSignedIn]);
    
    
     
@@ -37,10 +37,10 @@ export default () => {
         <Router history={history}>
             <StylesProvider generateClassName={generateClassName}>
                 <div>
-          <Header
+            <Header
             onSignOut={() => setIsSignedIn(false)}
             isSignedIn={isSignedIn}
-          />
+            />
                 <Suspense fallback={<Progress />}>
                 <Switch>
                     <Route path="/auth">
