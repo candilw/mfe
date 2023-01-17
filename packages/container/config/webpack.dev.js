@@ -10,6 +10,7 @@ const devConfig = {
     },
     devServer: {
         port: 8080,
+        //Changing this allowed me to direct access the urls
         historyApiFallback: true,
     },
     plugins: [
